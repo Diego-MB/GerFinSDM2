@@ -160,9 +160,9 @@ class TransacaoListaActivity : AppCompatActivity() {
                 this,
                 DatePickerDialog.OnDateSetListener { datePicker, mAno, mMes, mDia ->
                     // Tratamento da data: exemplo 1/11/2019 para 01/11/2019
-//                    inputData.setText(if(mDia < 10){"0$mDia"}else{mDia.toString()}+"/"+
-//                            if(mMes < 10){"0"+(mMes + 1).toString()}else{(mMes + 1).toString()}+"/"+
-//                            if(mAno < 10){"0$mAno"}else{mAno.toString()})
+                    inputData.setText(if(mDia < 10){"0$mDia"}else{mDia.toString()}+"/"+
+                            if(mMes < 10){"0"+(mMes + 1).toString()}else{(mMes + 1).toString()}+"/"+
+                            if(mAno < 10){"0$mAno"}else{mAno.toString()})
                 }, ano, mes, dia
             )
             dpd.show()
