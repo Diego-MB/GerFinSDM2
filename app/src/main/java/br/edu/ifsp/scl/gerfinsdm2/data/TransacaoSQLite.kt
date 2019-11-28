@@ -173,10 +173,10 @@ class TransacaoSQLite (contexto: Context): TransacaoDAO {
                 sql += " AND categoria = '${transacao.categoria}'"
             }
             if ((!inicio) and (!fim)) {
-//                sql += " AND data BETWEEN '${transacao.data}' AND '${transacao.periodicidade}'"
-                sql += " AND (SUBSTR (data, 7) || SUBSTR (data, 4, 2) || SUBSTR (data, 1, 2)) \n" +
-                        "BETWEEN (SUBSTR ('${transacao.data}', 7) || SUBSTR ('${transacao.data}', 4, 2) || SUBSTR ('${transacao.data}', 1, 2)) \n" +
-                        "AND (SUBSTR ('${transacao.periodicidade}', 7) || SUBSTR ('${transacao.periodicidade}', 4, 2) || SUBSTR ('${transacao.periodicidade}', 1, 2))"
+                sql += " AND data BETWEEN '${transacao.data}' AND '${transacao.periodicidade}'"
+//                sql += " AND (SUBSTR (data, 7) || SUBSTR (data, 4, 2) || SUBSTR (data, 1, 2)) \n" +
+//                        "BETWEEN (SUBSTR ('${transacao.data}', 7) || SUBSTR ('${transacao.data}', 4, 2) || SUBSTR ('${transacao.data}', 1, 2)) \n" +
+//                        "AND (SUBSTR ('${transacao.periodicidade}', 7) || SUBSTR ('${transacao.periodicidade}', 4, 2) || SUBSTR ('${transacao.periodicidade}', 1, 2))"
 
             }
 
